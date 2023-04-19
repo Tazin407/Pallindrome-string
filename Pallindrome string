@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+      char arr[1001];
+      scanf("%s", arr);
+      char arrp[1001];
+     int n= strlen(arr);
+     int s=0;
+      for (int i = 0; i <n; i++)
+      {
+        if (arr[i]==arr[n-1-i])
+        {
+          continue;
+        }
+        else{
+          s++;
+        }
+        
+      }
+      if (s!=0)
+      {
+        printf("NO");
+      }
+      else{
+        printf("YES");
+      }
+
+      
+
+    return 0;
+}
